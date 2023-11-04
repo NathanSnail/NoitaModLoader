@@ -13,6 +13,7 @@
   "categories": [
     "Other"
   ],
+  "publisher": "forgenet",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
