@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/F0rgenet/NoitaModLoader.git"
   },
-  "version": "0.0.2",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.84.0"
   },
