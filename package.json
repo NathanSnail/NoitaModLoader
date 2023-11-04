@@ -1,6 +1,6 @@
 {
   "name": "noitamodloader",
-  "displayName": "NoitaModLoader",
+  "displayName": "Noita Mod Loader",
   "description": "The 'Noita Mod Loader' is a Visual Studio Code plugin that simplifies the process of copying files from your project directory to the 'noita/mods' directory when you build your project. This plugin is designed to assist Noita modders by automating the file copying process, making it more convenient to develop mods for the game.",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "version": "0.0.5",
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "1.84.0"
   },
   "categories": [
     "Other"
@@ -22,25 +22,28 @@
       "title": "Copy mod"
     }],
     "configuration": {
-      "noitamodloader.modsPath": {
-          "type": "string",
-          "default": "C:/Program Files/Steam/steamapps/noita/mods",
-          "description": "Путь к noita/mods"
-      },
-      "noitamodloader.excludedItems": {
-          "type": "array",
-          "default": [".gitignore", ".vscode"],
-          "description": "Исключаемые файлы и директории"
+      "title": "NoitaModLoader",
+      "properties": {
+        "noitamodloader.modsPath": {
+            "type": "string",
+            "default": "C:/Program Files/Steam/steamapps/noita/mods",
+            "description": "Path to the 'noita/mods' directory"
+        },
+        "noitamodloader.excludedItems": {
+            "type": "array",
+            "default": [".gitignore", ".vscode"],
+            "description": "Excluded files and directories"
+        }
       }},
-      "menus": {
-        "explorer/context": [
-          {
-            "command": "extension.loadMod",
-            "group": "navigation",
-            "when": "resourceIsFolder"
-          }
-        ]
-      }
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.loadMod",
+          "group": "navigation",
+          "when": "contextMenuVisible"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
