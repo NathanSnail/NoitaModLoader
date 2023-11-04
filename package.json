@@ -18,8 +18,8 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "extension.buildProject",
-      "title": "Build Project and Copy to noita/mods"
+      "command": "extension.loadMod",
+      "title": "Copy mod to noita/mods"
     }],
     "configuration": {
       "noitamodloader.modsPath": {
