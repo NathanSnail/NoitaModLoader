@@ -10,7 +10,7 @@ You can install the "Noita Mod Loader" plugin in Visual Studio Code by following
 
 1. Launch Visual Studio Code.
 
-2. Go to the Extensions view by clicking on the square icon in the Activity Bar on the side of the window.
+2. Go to the Extensions view by clicking on the square icon in the Activitys Bar on the side of the window.
 
 3. In the search bar, type "Noita Mod Loader" and press Enter.
 

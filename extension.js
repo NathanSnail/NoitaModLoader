@@ -5,9 +5,9 @@ const fs = require('fs-extra');
 const disposable = vscode.commands.registerCommand('extension.buildProject', () => {
     const projectPath = vscode.workspace.workspaceFolders;
     
-    const noitaModsPath = vscode.workspace.getConfiguration().get('noitamodloader.modsPath', 'C:/Program Files/Steam/steamapps/noita/mods');
+    const noitaModsPath = vscode.workspace.getConfiguration().get('noitamodloader.modsPath');
 
-    const excludedItems = vscode.workspace.getConfiguration().get('noitamodloader.excludedItems', ['.gitignore', '.vscode']);
+    const excludedItems = vscode.workspace.getConfiguration().get('noitamodloader.excludedItems');
 
     try {
         fs.copy(projectPath, noitaModsPath, {

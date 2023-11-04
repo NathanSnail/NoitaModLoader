@@ -19,7 +19,18 @@
     "commands": [{
       "command": "extension.buildProject",
       "title": "Build Project and Copy to noita/mods"
-    }]
+    }],
+    "configuration": {
+      "noitamodloader.modsPath": {
+          "type": "string",
+          "default": "C:/Program Files/Steam/steamapps/noita/mods",
+          "description": "Путь к noita/mods"
+      },
+      "noitamodloader.excludedItems": {
+          "type": "array",
+          "default": [".gitignore", ".vscode"],
+          "description": "Исключаемые файлы и директории"
+      }}
   },
   "scripts": {
     "lint": "eslint .",
