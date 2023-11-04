@@ -19,7 +19,7 @@
   "contributes": {
     "commands": [{
       "command": "extension.loadMod",
-      "title": "Copy mod to noita/mods"
+      "title": "Copy mod"
     }],
     "configuration": {
       "noitamodloader.modsPath": {
@@ -31,7 +31,16 @@
           "type": "array",
           "default": [".gitignore", ".vscode"],
           "description": "Исключаемые файлы и директории"
-      }}
+      }},
+      "menus": {
+        "explorer/context": [
+          {
+            "command": "extension.loadMod",
+            "group": "navigation",
+            "when": "resourceIsFolder"
+          }
+        ]
+      }
   },
   "scripts": {
     "lint": "eslint .",
